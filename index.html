@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>喝水提醒小幫手</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>💧 喝水提醒小幫手</h1>
+
+  <div class="control">
+    <label>提醒間隔 (分鐘)：</label>
+    <input type="number" id="interval" value="30" min="1">
+    <button onclick="startTimer()">開始</button>
+  </div>
+
+  <div class="timer" id="countdown">尚未開始</div>
+  <div class="reminder" id="reminderMsg"></div>
+  <div class="record">今日已喝水：<span id="count">0</span> 次</div>
+
+  <script src="script.js"></script>
+</body>
+</html>
